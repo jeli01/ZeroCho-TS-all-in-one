@@ -4,18 +4,18 @@
 // const d = undefined;
 // const e = null;                -> 이렇게 해도 타입을 추론을 한다.
 //                                -> 타입스크립트를 최대한 믿다가 틀리면 그때 우리가 나서는게 낫다.
-
+/*
 const a: string = '5';
 const b: number = 5;
 const c: boolean = true;
 const d: undefined = undefined;
 const e: null = null;
-
-const f: true = true;    // 나는 true만 받을거야!!
+*/
+//const f: true = true;    // 나는 true만 받을거야!!
 //const f: 5 = 5;        // 나는 5만 받을거야!!!! 애초에 const는 바뀔 필요가 없으니까 이런 경우가 있음.
 
-const obj: { lat: number, lon: number } = { lat: 37.5, lon: 127.5 };
-const arr: string[] = ['123', '456'];
+//const obj: { lat: number, lon: number } = { lat: 37.5, lon: 127.5 };
+//const arr: string[] = ['123', '456'];
 //const arr2: Array<number> = [123, 456];
 //const arr3: [number, number, string] = [123, 456, 'hello']        // 튜플
 
@@ -39,10 +39,10 @@ const arr: string[] = ['123', '456'];
 
   const add: Add = (x, y) => x + y;
 */
-
+/*
 let aa = 123;
 aa = 'hello' as unknown as number;
-
+*/
 /*
 try {
   const array: string = [];
@@ -53,7 +53,7 @@ try {
 */
 
 /*
-const head = document.querySelector('#head')!;        // null이 사라짐 무조건 존재한다고 생각할때
+const head = document.querySelector('#head')!;        // null이 사라짐 무조건 존재한다고 생각할때 but 비추!
 console.log(head);
 
 const head = document.querySelector('#head');
